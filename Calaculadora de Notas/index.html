@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Calculadora de Notas</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="calculator">
+    <h2>Calculadora de Notas</h2>
+    <form id="gradeForm">
+      <div class="input-group">
+        <label for="grade1">Nota 1 (30%):</label>
+        <input placeholder="Ingresa la Nota 1" type="number" id="grade1" name="grade1" min="0" max="10" step="0.1" required>
+      </div>
+      <div class="input-group">
+        <label for="grade2">Nota 2 (30%):</label>
+        <input placeholder="Ingresa la Nota 2" type="number" id="grade2" name="grade2" min="0" max="10" step="0.1" required>
+      </div>
+      <div class="input-group">
+        <label for="grade3">Nota 3 (40%):</label>
+        <input placeholder="Ingresa la Nota 3" type="number" id="grade3" name="grade3" min="0" max="10" step="0.1" required>
+      </div>
+      <div class="button-group">
+        <button type="submit">Calcula mi nota</button>
+      </div>
+    </form>
+    <div id="result" class="result">
+      <p>El resultado irá aquí</p>
+    </div>
+  </div>
+</body>
+</html>
