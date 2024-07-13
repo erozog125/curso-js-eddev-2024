@@ -8,27 +8,28 @@
 </head>
 <body>
   <div class="calculator">
-    <h2>Calculadora de Notas</h2>
-    <form id="gradeForm">
+    <h2 id="title">Calculadora de Notas</h2>
+    <form id="frm-notes">
       <div class="input-group">
         <label for="grade1">Nota 1 (30%):</label>
-        <input placeholder="Ingresa la Nota 1" type="number" id="grade1" name="grade1" min="0" max="10" step="0.1" required>
+        <input placeholder="Ingresa la Nota 1" type="number" id="txt-note1" name="grade1" min="1" max="5" step="0.1" required>
       </div>
       <div class="input-group">
         <label for="grade2">Nota 2 (30%):</label>
-        <input placeholder="Ingresa la Nota 2" type="number" id="grade2" name="grade2" min="0" max="10" step="0.1" required>
+        <input placeholder="Ingresa la Nota 2" type="number" id="txt-note2" name="grade2" min="1" max="5" step="0.1" required>
       </div>
       <div class="input-group">
         <label for="grade3">Nota 3 (40%):</label>
-        <input placeholder="Ingresa la Nota 3" type="number" id="grade3" name="grade3" min="0" max="10" step="0.1" required>
+        <input placeholder="Ingresa la Nota 3" type="number" id="txt-note3" name="grade3" min="1" max="5" step="0.1" required>
       </div>
       <div class="button-group">
         <button type="submit">Calcula mi nota</button>
       </div>
     </form>
     <div id="result" class="result">
-      <p>El resultado irá aquí</p>
+      <p id="p-resolve">El resultado irá aquí</p>
     </div>
   </div>
+  <script src="app.js"></script>
 </body>
 </html>
